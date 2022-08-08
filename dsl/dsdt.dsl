@@ -18,7 +18,7 @@
  *     Compiler ID      "    "
  *     Compiler Version 0x01000013 (16777235)
  */
-DefinitionBlock ("", "DSDT", 1, "XMCC  ", "XMCC1953", 0x00000002)
+DefinitionBlock ("", "DSDT", 1, "XMCC  ", "XMCC1953", 0x00000003)
 {
     /*
      * iASL Warning: There were 9 external control methods found during
