@@ -193,13 +193,6 @@ DefinitionBlock ("", "DSDT", 1, "XMCC  ", "XMCC1953", 0x00000002)
     {
         PRWP [Zero] = Arg0
         PRWP [One] = Arg1
-        If ((DAS3 == Zero))
-        {
-            If ((Arg1 <= 0x03))
-            {
-                PRWP [One] = Zero
-            }
-        }
 
         Return (PRWP) /* \PRWP */
     }
@@ -769,19 +762,14 @@ DefinitionBlock ("", "DSDT", 1, "XMCC  ", "XMCC1953", 0x00000002)
         Zero, 
         Zero
     })
-    If ((CNSB == Zero))
+
+    Name (_S3, Package (0x04)  // _S3_: S3 System State
     {
-        If ((DAS3 == One))
-        {
-            Name (_S3, Package (0x04)  // _S3_: S3 System State
-            {
-                0x03, 
-                0x03, 
-                Zero, 
-                Zero
-            })
-        }
-    }
+        0x03, 
+        0x03, 
+        Zero, 
+        Zero
+    })
 
     Name (_S4, Package (0x04)  // _S4_: S4 System State
     {
