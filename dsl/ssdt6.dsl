@@ -535,7 +535,7 @@ DefinitionBlock ("", "SSDT", 1, "AMD", "AmdTable", 0x00000001)
             }, 
 
             0x00000190, 
-            0x00000834
+            0x000008FC
         })
     }
 
@@ -1047,7 +1047,7 @@ DefinitionBlock ("", "SSDT", 1, "AMD", "AmdTable", 0x00000001)
             }, 
 
             0x00000190, 
-            0x00000834
+            0x000008FC
         })
     }
 
@@ -1559,7 +1559,7 @@ DefinitionBlock ("", "SSDT", 1, "AMD", "AmdTable", 0x00000001)
             }, 
 
             0x00000190, 
-            0x00000834
+            0x000008FC
         })
     }
 
@@ -2071,7 +2071,7 @@ DefinitionBlock ("", "SSDT", 1, "AMD", "AmdTable", 0x00000001)
             }, 
 
             0x00000190, 
-            0x00000834
+            0x000008FC
         })
     }
 
@@ -2583,7 +2583,7 @@ DefinitionBlock ("", "SSDT", 1, "AMD", "AmdTable", 0x00000001)
             }, 
 
             0x00000190, 
-            0x00000834
+            0x000008FC
         })
     }
 
@@ -3095,7 +3095,7 @@ DefinitionBlock ("", "SSDT", 1, "AMD", "AmdTable", 0x00000001)
             }, 
 
             0x00000190, 
-            0x00000834
+            0x000008FC
         })
     }
 }
