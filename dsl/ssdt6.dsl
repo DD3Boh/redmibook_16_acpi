@@ -18,7 +18,7 @@
  *     Compiler ID      "AMD "
  *     Compiler Version 0x00000001 (1)
  */
-DefinitionBlock ("", "SSDT", 1, "AMD", "AmdTable", 0x00000001)
+DefinitionBlock ("", "SSDT", 1, "AMD", "AmdTable", 0x00000002)
 {
     External (_SB_.PLTF.C000, DeviceObj)
     External (_SB_.PLTF.C001, DeviceObj)
