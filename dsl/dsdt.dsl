@@ -7315,5 +7315,1121 @@ DefinitionBlock ("", "DSDT", 1, "XMCC  ", "XMCC1953", 0x00000003)
             Name (_TC2, 0x05)  // _TC2: Thermal Constant 2
         }
     }
+
+    Scope (\_SB.PLTF.C000)
+    {
+        Name (_CPC, Package (0x17)  // _CPC: Continuous Performance Control
+        {
+            0x17, 
+            0x03, 
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x18,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x10,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x08,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x10,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x08,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x40,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000000000E7, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x40,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000000000E8, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x02,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B2, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x01,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B1, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            0x00000001, 
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x18,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            0x00000190, 
+            0x000008FC
+        })
+    }
+
+    Scope (\_SB.PLTF.C001)
+    {
+        Name (_CPC, Package (0x17)  // _CPC: Continuous Performance Control
+        {
+            0x17, 
+            0x03, 
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x18,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x10,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x08,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x10,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x08,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x40,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000000000E7, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x40,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000000000E8, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x02,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B2, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x01,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B1, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            0x00000001, 
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x18,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            0x00000190, 
+            0x000008FC
+        })
+    }
+
+    Scope (\_SB.PLTF.C002)
+    {
+        Name (_CPC, Package (0x17)  // _CPC: Continuous Performance Control
+        {
+            0x17, 
+            0x03, 
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x18,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x10,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x08,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x10,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x08,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x40,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000000000E7, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x40,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000000000E8, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x02,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B2, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x01,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B1, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            0x00000001, 
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x18,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            0x00000190, 
+            0x000008FC
+        })
+    }
+
+    Scope (\_SB.PLTF.C003)
+    {
+        Name (_CPC, Package (0x17)  // _CPC: Continuous Performance Control
+        {
+            0x17, 
+            0x03, 
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x18,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x10,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x08,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x10,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x08,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x40,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000000000E7, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x40,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000000000E8, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x02,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B2, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x01,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B1, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            0x00000001, 
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x18,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            0x00000190, 
+            0x000008FC
+        })
+    }
+
+    Scope (\_SB.PLTF.C004)
+    {
+        Name (_CPC, Package (0x17)  // _CPC: Continuous Performance Control
+        {
+            0x17, 
+            0x03, 
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x18,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x10,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x08,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x10,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x08,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x40,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000000000E7, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x40,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000000000E8, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x02,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B2, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x01,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B1, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            0x00000001, 
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x18,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            0x00000190, 
+            0x000008FC
+        })
+    }
+
+    Scope (\_SB.PLTF.C005)
+    {
+        Name (_CPC, Package (0x17)  // _CPC: Continuous Performance Control
+        {
+            0x17, 
+            0x03, 
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x18,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x10,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x08,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B0, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x10,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x08,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x40,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000000000E7, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x40,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000000000E8, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x02,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B2, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x01,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x00000000C00102B1, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            0x00000001, 
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (FFixedHW, 
+                    0x08,               // Bit Width
+                    0x18,               // Bit Offset
+                    0x00000000C00102B3, // Address
+                    0x04,               // Access Size
+                    )
+            }, 
+
+            ResourceTemplate ()
+            {
+                Register (SystemMemory, 
+                    0x00,               // Bit Width
+                    0x00,               // Bit Offset
+                    0x0000000000000000, // Address
+                    ,)
+            }, 
+
+            0x00000190, 
+            0x000008FC
+        })
+    }
 }
 
