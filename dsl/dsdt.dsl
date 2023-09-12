@@ -1,11 +1,11 @@
 /*
  * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20220331 (64-bit version)
- * Copyright (c) 2000 - 2022 Intel Corporation
+ * AML/ASL+ Disassembler version 20230628 (64-bit version)
+ * Copyright (c) 2000 - 2023 Intel Corporation
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of dsdt.dat, Mon Aug  8 17:21:58 2022
+ * Disassembly of dat/dsdt.dat, Tue Sep 12 15:08:20 2023
  *
  * Original Table Header:
  *     Signature        "DSDT"
@@ -20,68 +20,39 @@
  */
 DefinitionBlock ("", "DSDT", 1, "XMCC  ", "XMCC1953", 0x00000003)
 {
-    /*
-     * iASL Warning: There were 9 external control methods found during
-     * disassembly, but only 0 were resolved (9 unresolved). Additional
-     * ACPI tables may be required to properly disassemble the code. This
-     * resulting disassembler output file may not compile because the
-     * disassembler did not know how many arguments to assign to the
-     * unresolved methods. Note: SSDTs can be dynamically loaded at
-     * runtime and may or may not be available via the host OS.
-     *
-     * To specify the tables needed to resolve external control method
-     * references, the -e option can be used to specify the filenames.
-     * Example iASL invocations:
-     *     iasl -e ssdt1.aml ssdt2.aml ssdt3.aml -d dsdt.aml
-     *     iasl -e dsdt.aml ssdt2.aml -d ssdt1.aml
-     *     iasl -e ssdt*.aml -d dsdt.aml
-     *
-     * In addition, the -fe option can be used to specify a file containing
-     * control method external declarations with the associated method
-     * argument counts. Each line of the file must be of the form:
-     *     External (<method pathname>, MethodObj, <argument count>)
-     * Invocation:
-     *     iasl -fe refs.txt -d dsdt.aml
-     *
-     * The following methods were unresolved and many not compile properly
-     * because the disassembler had to guess at the number of arguments
-     * required for each:
-     */
-    External (_SB_.ALIB, MethodObj)    // Warning: Unknown method, guessing 2 arguments
-    External (_SB_.APTS, MethodObj)    // Warning: Unknown method, guessing 3 arguments
-    External (_SB_.AWAK, MethodObj)    // Warning: Unknown method, guessing 1 arguments
-    External (_SB_.TPM2.PTS_, MethodObj)    // Warning: Unknown method, guessing 1 arguments
+    External (_SB_.ALIB, MethodObj)    // 2 Arguments
+    External (_SB_.APTS, MethodObj)    // 1 Arguments
+    External (_SB_.AWAK, MethodObj)    // 1 Arguments
+    External (_SB_.PCI0.GP17.VGA_.AFN7, MethodObj)    // 1 Arguments
+    External (_SB_.TPM2.PTS_, MethodObj)    // 1 Arguments
     External (_SB_.UBTC, UnknownObj)
-    External (_SB_.UBTC.CCI0, UnknownObj)
-    External (_SB_.UBTC.CCI1, UnknownObj)
-    External (_SB_.UBTC.CCI2, UnknownObj)
-    External (_SB_.UBTC.CCI3, UnknownObj)
-    External (_SB_.UBTC.MGI0, UnknownObj)
-    External (_SB_.UBTC.MGI1, UnknownObj)
-    External (_SB_.UBTC.MGI2, UnknownObj)
-    External (_SB_.UBTC.MGI3, UnknownObj)
-    External (_SB_.UBTC.MGI4, UnknownObj)
-    External (_SB_.UBTC.MGI5, UnknownObj)
-    External (_SB_.UBTC.MGI6, UnknownObj)
-    External (_SB_.UBTC.MGI7, UnknownObj)
-    External (_SB_.UBTC.MGI8, UnknownObj)
-    External (_SB_.UBTC.MGI9, UnknownObj)
-    External (_SB_.UBTC.MGIA, UnknownObj)
-    External (_SB_.UBTC.MGIB, UnknownObj)
-    External (_SB_.UBTC.MGIC, UnknownObj)
-    External (_SB_.UBTC.MGID, UnknownObj)
-    External (_SB_.UBTC.MGIE, UnknownObj)
-    External (_SB_.UBTC.MGIF, UnknownObj)
-    External (_SB_.UBTC.RSV1, UnknownObj)
-    External (_SB_.UBTC.RSV2, UnknownObj)
-    External (_SB_.UBTC.VER1, UnknownObj)
-    External (_SB_.UBTC.VER2, UnknownObj)
-    External (AFN4, MethodObj)    // Warning: Unknown method, guessing 1 arguments
-    External (AFN7, MethodObj)    // Warning: Unknown method, guessing 1 arguments
-    External (ALIB, MethodObj)    // Warning: Unknown method, guessing 2 arguments
-    External (MPTS, MethodObj)    // Warning: Unknown method, guessing 1 arguments
-    External (MWAK, MethodObj)    // Warning: Unknown method, guessing 1 arguments
-    External (UBTC, UnknownObj)
+    External (_SB_.UBTC.CCI0, FieldUnitObj)
+    External (_SB_.UBTC.CCI1, FieldUnitObj)
+    External (_SB_.UBTC.CCI2, FieldUnitObj)
+    External (_SB_.UBTC.CCI3, FieldUnitObj)
+    External (_SB_.UBTC.MGI0, FieldUnitObj)
+    External (_SB_.UBTC.MGI1, FieldUnitObj)
+    External (_SB_.UBTC.MGI2, FieldUnitObj)
+    External (_SB_.UBTC.MGI3, FieldUnitObj)
+    External (_SB_.UBTC.MGI4, FieldUnitObj)
+    External (_SB_.UBTC.MGI5, FieldUnitObj)
+    External (_SB_.UBTC.MGI6, FieldUnitObj)
+    External (_SB_.UBTC.MGI7, FieldUnitObj)
+    External (_SB_.UBTC.MGI8, FieldUnitObj)
+    External (_SB_.UBTC.MGI9, FieldUnitObj)
+    External (_SB_.UBTC.MGIA, FieldUnitObj)
+    External (_SB_.UBTC.MGIB, FieldUnitObj)
+    External (_SB_.UBTC.MGIC, FieldUnitObj)
+    External (_SB_.UBTC.MGID, FieldUnitObj)
+    External (_SB_.UBTC.MGIE, FieldUnitObj)
+    External (_SB_.UBTC.MGIF, FieldUnitObj)
+    External (_SB_.UBTC.RSV1, FieldUnitObj)
+    External (_SB_.UBTC.RSV2, FieldUnitObj)
+    External (_SB_.UBTC.VER1, FieldUnitObj)
+    External (_SB_.UBTC.VER2, FieldUnitObj)
+    External (AFN4, MethodObj)    // 1 Arguments
+    External (MPTS, MethodObj)    // 1 Arguments
+    External (MWAK, MethodObj)    // 1 Arguments
 
     OperationRegion (DBG0, SystemIO, 0x80, One)
     Field (DBG0, ByteAcc, NoLock, Preserve)
@@ -893,7 +864,8 @@ DefinitionBlock ("", "DSDT", 1, "XMCC  ", "XMCC1953", 0x00000003)
             \_SB.TPM2.PTS (Arg0)
         }
 
-        \_SB.APTS (Arg0, MPTS (Arg0))
+        \_SB.APTS (Arg0)
+        MPTS (Arg0)
     }
 
     Method (_WAK, 1, NotSerialized)  // _WAK: Wake
